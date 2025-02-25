@@ -2,7 +2,7 @@
 
 describe("Test User Interface Tests for The Republic App", () => {
 
-  it.only("Verify URL consistency and page reload functionality", () => {
+  it("Verify URL consistency and page reload functionality", () => {
     cy.visit("https://the-republic-six.vercel.app/");
     cy.url().should("include", "vercel.app/");
     cy.url().should("eq", "https://the-republic-six.vercel.app/");
@@ -15,7 +15,7 @@ describe("Test User Interface Tests for The Republic App", () => {
   });
 
   
-  it.only("Validate the Home  elements in sidebar", () => {
+  it("Validate the Home  elements in sidebar", () => {
 
     cy.visit("https://the-republic-six.vercel.app/");
     cy.get(".justify-between > .p-2").click();

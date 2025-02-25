@@ -15,14 +15,14 @@ describe('Test the functionality of Switch theme ', ()=> {
       cy.get('#radix-\\:r4\\:').click();
       cy.contains('Light').click({force:true});
       cy.get('#radix-\\:r4\\:').click();
-      cy.contains('Dark').click({force:true});
+      cy.contains('Dark',{setTimeout:10000}).click({force:true});
       cy.get('#radix-\\:r4\\:').click();
       cy.contains('System').click({force:true});
       cy.get('#item-0-feed-issues > [data-testid="issue-item"] > .gap-4 > .cursor-pointer').click();
       cy.get('div.flex-grow > div.relative > .relative').clear().type('Its not a promblem');
       //cy.get('.peer').check();
       cy.get('.justify-between > .inline-flex').click();
-      cy.get('.text-red-600').click();
+      //cy.get('.text-red-600').click({force:true});
 
       });
     

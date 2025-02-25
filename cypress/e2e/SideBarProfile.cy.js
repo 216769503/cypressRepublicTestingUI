@@ -13,7 +13,5 @@ describe("Enter the user description name", () => {
       cy.get(':nth-child(8) > a').click({force:true});
       cy.get('.-mt-16 > .whitespace-nowrap').click({force:true});
    
-    
-
     });
   });

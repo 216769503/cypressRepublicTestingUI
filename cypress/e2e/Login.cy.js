@@ -1,7 +1,7 @@
 
 describe('Test User Login and Navigation Tests', ()=> {
 
-      it.only('Create Account/Sign Up for New User', ()=> {
+      it('Create Account/Sign Up for New User', ()=> {
 
         cy.visit("https://the-republic-six.vercel.app/");
         cy.get('.justify-between > .p-2').click();
@@ -19,7 +19,7 @@ describe('Test User Login and Navigation Tests', ()=> {
 
       });
 
-      it.only('Verify login page',()=>{
+      it('Verify login page',()=>{
 
         cy.visit("https://the-republic-six.vercel.app/");
         cy.get('.justify-between > .p-2').click();
@@ -32,7 +32,7 @@ describe('Test User Login and Navigation Tests', ()=> {
       });
 
 
-      it.skip('Login in using a Google account', ()=> {
+      it('Login in using a Google account', ()=> {
 
         cy.visit("https://the-republic-six.vercel.app/");
         cy.get('.justify-between > .p-2').click();
@@ -45,7 +45,7 @@ describe('Test User Login and Navigation Tests', ()=> {
       });
 
      
-      it.skip('Login logout account ', ()=>{
+      it('Login logout account ', ()=>{
 
         cy.visit("https://the-republic-six.vercel.app/");
         cy.get('.justify-between > .p-2').click();
